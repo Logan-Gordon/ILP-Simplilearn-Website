@@ -8,9 +8,13 @@
     }
 }
 
+#blog {
+    background-image: url("https://cdn.wallpapersafari.com/11/2/2ER4Yn.jpg");
+}
+
 body {
     font-family: Georgia, "Times New Roman", Times, serif;
-    color: #555;
+    color: rgb(105, 105, 105);
 }
 
 h1,
@@ -27,7 +31,7 @@ h6,
 .h6 {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-weight: normal;
-    color: #333;
+    color: rgb(100, 100, 100);
 }
 
 
