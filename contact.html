@@ -20,7 +20,7 @@
 <body>
 
     <div class="blog-masthead">
-        <div class="container">
+        <div class="container-fluid">
             <nav class="nav blog-nav">
                 <a class="nav-link" href="../home.html">Home</a>
                 <a class="nav-link" href="../blog.html">Blog</a>
@@ -30,8 +30,8 @@
         </div>
     </div>
 
-    <script src="formValidation.js"></script>
-    <div class="container">
+    <script src="../formValidation.js"></script>
+    <div class="container-fluid">
 
         <div class="blog-header">
             <div class="container">
@@ -41,14 +41,14 @@
         </div>
 
 
-        <form name="contact" onLoad="validateForm()">
-            Full Name: </br> <input type="text" id="name" placeholder="Full Name Here" /> </br>
-            <br/>Email Address: </br><input type="text" id="email" placeholder="Email Address Here" /> <br/>
+        <form name="contact" onsubmit="validateForm()">
+            Full Name: </br> <input type="text" id="name" value="" placeholder="Full Name Here" /> </br>
+            <br/>Email Address: </br><input type="text" id="email" value="" placeholder="Email Address Here" /> <br/>
             <br/>Mobile Number (Optional): </br><input type="text" id="mobile" placeholder="Contact Number" /> <br/>
             <br/> Comments: </br>
             <textarea cols="60 " rows="6 " id="comment " placeholder="Tell us how we did or how we can do better in the future ... "></textarea>
             <br/>
-            <input type="submit" id="submit " onClick="validateForm()" value="Submit " />
+            <input type="submit" id="submit " value="Submit " />
 
         </form>
     </div>

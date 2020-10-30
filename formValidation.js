@@ -1,37 +1,31 @@
-function printError(element, msg) {
-    document.getElementById(element).innerHTML = msg;
-}
-
 function validateForm() {
 
 
-    var name = document.contact.name.value;
-    var email = document.contact.email.value;
-    var mobile = document.contact.mobile.value;
+    var name = document.getElementById("name").value;
+    var email = document.getElementById("email").value;
 
 
-    var nameErr = emailErr = mobileErr = false;
+
+    var nameErr = emailErr = mobileErr = true;
 
     if (name == "") {
-        printError("nameErr", "Please enter your name");
+        alert("Please enter your name");
     } else {
         var regex = /^[a-zA-Z\s]+$/;
         if (regex.test(name) === false) {
-            printError("nameErr", "Please enter a valid name");
+            alert("Please enter a valid name");
         } else {
-            printError("nameErr", "")
             nameErr = false;
         }
     }
 
     if (email == "") {
-        printError("emailErr", "Please enter your email");
+        alert("Please enter your email");
     } else {
         var regex = /^\S+@\S+\.\S+$/;
         if (regex.test(email) === false) {
-            printError("emailErr", "Please enter a valid email");
+            alert("Please enter a valid email");
         } else {
-            printError("emailErr", "")
             emailErr = false;
         }
     }
@@ -40,7 +34,7 @@ function validateForm() {
     if (nameErr || emailErr == true) {
         return false;
     } else {
-        alert('you have submitted the form...')
+        alert('you have submitted the form...');
     }
 
 }
